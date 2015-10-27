@@ -1,9 +1,9 @@
 var expect = require('chai').expect;
 var greet = require('./greet.js')
-var str = 'some string'
+// var str = 'some string'
 
 //this is mocha
-describe('access string', function(){
+describe('greet function', function(){
   // it('should return a string', function(done){
 
   //   //this is chai
@@ -14,10 +14,10 @@ describe('access string', function(){
   // it('should equal some string', function(done) {
   //   expect(str.to)
   // }
-  it('should return a greeting', function(){
-    expect(greet.sayName('Preet')).to.eql("hello, I am Preet");
+  it('should return a personalized greeting', function(){
+    expect(greet.greet('Test')).to.eql("hello Test");
   });
-  it('should be a number', function(){
-    expect(greet.testNumber).to.eql(0)
-  })
+  //it('should be a number', function(){
+  //  expect(greet.testNumber).to.eql(0)
+  //})
 });

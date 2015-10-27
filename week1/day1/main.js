@@ -4,4 +4,4 @@ var greet = require('./greet.js')
 
 // console.log(greet.doSomething)
 
-console.log(greet.squared(2))
+console.log(greet.greet("Preet"))
